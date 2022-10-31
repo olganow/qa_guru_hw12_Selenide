@@ -10,11 +10,11 @@ public class GithubSolutionTest {
 
     @Test
     void issueSearchForMyRep() {
-        
+
         open("https://github.com/");
         $(byText("Solutions")).hover();
         $(byText("Teams")).click();
-        $("h1 p").shouldHave(text("GITHUB FOR TEAMS"));
+        $("main h4").shouldHave(text("GITHUB FOR TEAMS"));
 
     }
 
